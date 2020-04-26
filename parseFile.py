@@ -23,6 +23,7 @@ while(currTxt):
                 currName = ""
     if i % 10000 == 0:
         print(i)
+    currTxt = txtList.readline()
 
 for name in nameList:
     outFile.write(name + '\n')
