@@ -9,8 +9,8 @@ currNext = serF.readline()
 serials = currNext.split()
 
 i = 0
-for file in os.listdir('oak2021'):
-    data = csv.reader(open('oak2021/' + file, 'r'), delimiter=",")
+for file in os.listdir('argon'):
+    data = csv.reader(open('argon/' + file, 'r'), delimiter=",")
     for row in data:
         currS = row[2]
         if row[2] in serials:
